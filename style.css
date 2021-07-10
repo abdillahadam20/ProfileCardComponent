@@ -22,7 +22,14 @@ body {
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 420px) {
+  .background {
+    z-index: -99;
+    position: absolute;
+    top: 40vh;
+    left: 30vw;
+  }
+
 .card {
     background-color: #fff;
     width: 350px;
@@ -32,7 +39,7 @@ body {
     top: 15vh;
     border-radius: 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 99;
+    z-index: -99;
   }
 
   .card .up>img {
