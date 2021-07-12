@@ -3,6 +3,7 @@
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
+## Just completed challenge from frontendmentor.io
 
 Thanks for checking out this front-end coding challenge.
 
