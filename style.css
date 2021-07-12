@@ -13,20 +13,115 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Kumbh Sans', sans-serif;
-  background-color: var(--dark-cyan);
-  background-image: url(images/bg-pattern-top.svg);
-  background-size: cover;
-  background-position: -50vw -30vh;
-  background-repeat: no-repeat;
-}
-
 @media only screen and (max-width: 1440px) {
+  body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url(images/bg-pattern-top.svg);
+    background-size: cover;
+    background-position: -50vw -130vh;
+    background-repeat: no-repeat;
+  }
 
+  .background {
+    z-index: -99;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+  }
+
+  .background img {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+  }
+
+.card {
+    background-color: #fff;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    left: 30px;
+    top: 20vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: -99;
+    margin: 0 auto;
+  }
+
+  .card .up>img {
+    width: 350px;
+    position: relative;
+    top: 0px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .card .profileCard {
+    background-color: #fff;
+    position: relative;
+    left: 10vw;
+    top: -5vh;
+    border-radius: 50%;
+    width: 103px;
+    height: 103px;
+  }
+
+  .card .profileCard>img {
+    position: absolute;
+    left: 0.3vw;
+    top: 0.5vh;
+    border-radius: 50%;
+  }
+
+  .card .down .name {
+    position: relative;
+    top: -2vh;
+    text-align: center;
+  }
+
+  .card .down #age {
+    font-weight: 400;
+    color: var(--dark-gray);
+    margin-left: 2vw;
+  }
+
+  .card .down .places {
+    line-height: 2.8;
+    text-align: center;
+    color: var(--dark-gray);
+  }
+
+  .card .down .followers, .likes, .photos {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 3vh;
+    margin: 0 25px;
+    top: 3vh;
+    line-height: 1.4;
+  }
+
+  .card .down .followers>h3, .likes>h3, .photos>h3 {
+    font-size: 18px;
+  }
+
+  .card .down .followers>p, .likes>p, .photos>p {
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
+  body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url(images/bg-pattern-top.svg);
+    background-size: cover;
+    background-position: -50vw -30vh;
+    background-repeat: no-repeat;
+  }
+
   .background {
     z-index: -99;
     position: absolute;
@@ -36,9 +131,9 @@ body {
 
   .background img {
     width: 300px;
-    height: 400px;
+    height: 350px;
     position: relative;
-    top: 50px;
+    top: 10px;
   }
 
 .card {
@@ -46,7 +141,7 @@ body {
     width: 350px;
     height: 400px;
     position: relative;
-    left: 30px;
+    left: 10px;
     top: 20vh;
     border-radius: 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -115,10 +210,3 @@ body {
     letter-spacing: 2px;
   }
 }
-
-
-
-/* 
-@media only screen (max-width: 1440px) {
-
-} */
